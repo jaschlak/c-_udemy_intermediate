@@ -13,6 +13,7 @@ namespace _008_Constructors
         public string Name;
         public List<Order> Orders;
 
+        // Constructor
         public Customer()
         {
             Orders = new List<Order>();
@@ -27,7 +28,7 @@ namespace _008_Constructors
 
         // Overload 2
         public Customer(int id, string name)
-            : this(id) // loads constructor above, which loads base constructor
+            : this(id) // loads constructor above, which loads base constructor, not best practice
         {
             this.Id = id;
             this.Name = name;
